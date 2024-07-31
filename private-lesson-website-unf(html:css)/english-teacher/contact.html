@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="approach-gpt.css">
+    <link rel="stylesheet" href="contact.css">
+    
+    <title>Abraham Teaches English</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="eng-teach.html" class="button button-eng-teach">Home</a></li>
+                <li><a href="approach-gpt.html" class="button button-approach">Approach</a></li>
+                
+                <li><a href="pricing.html" class="button button-pricing">Pricing</a></li>
+                <li><a href="contact.html" class="button button-contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="c-content">
+        <p>Leave your contact information to set up a consultation meet.</p>
+        <form method="post" action="imaginary.py">
+            <fieldset>
+                
+                <legend>Contact Info</legend>
+                <div>
+                    <label for="firstname">First Name (Given Name): </label>
+                    <input type="text" name="firstname" id="firstname" required>    
+                </div>
+                <div>
+                    <label for="lastname">Last Name (Family Name): </label>
+                    <input type="text" name="lastname" id="lastname" required>    
+                </div>
+                <div class="f-row">
+                    <div>
+                        <label for="c-method">Contact Method:</label> 
+                        <select name="c-method" id="c-method" required>
+                            <option value="">--Please choose an option--</option>
+                            <option value="text-message">Text Message</option>
+                            <option value="phone-call">Phone Call</option>
+                            <option value="kakao">Kakao</option>
+                            <option value="e-mail">E-mail</option>
+                        </select>
+                    </div>
+                    <div class="pad-left">
+                        
+
+                        <div id="phone-field" class="contact-field">
+                            <label for="phone-call">Phone Number:</label>
+                            <input type="tel" id="phone-call" name="phone-call">
+                        </div>
+                
+                        <div id="email-field" class="contact-field">
+                            <label for="e-mail">Email Address:</label>
+                            <input type="email" id="e-mail" name="e-mail" required>
+                        </div>
+
+                        <div id="text-field" class="contact-field">
+                            <label for="text-message">Phone Number:</label>
+                            <input type="textmes" id="text-message" name="text-message">
+                        </div>
+
+                        <div id="kakao-field" class="contact-field">
+                            <label for="kakao">Kakao ID:</label>
+                            <input type="kakaomes" id="kakao" name="kakao">
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="Submit"> 
+            </fieldset> 
+            
+        
+    </div>
+
+
+    <!-- register/forms/consultation -->
+    <script src="contact.js">
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+} */
+
+.timeline {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0;
+    background-color: rgba(48, 48, 48, 0.666);
+}
+
+.container {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+}
+
+.container.left {
+    left: 0;
+}
+
+.container.right {
+    left: 50%;
+}
+
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 50px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.container.left .content {
+    border-left: 6px solid #2196F3;
+}
+
+.container.right .content {
+    border-right: 6px solid #2196F3;
+}
+
+/* .container.left::after,
+.container.right::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: rgb(255, 255, 255);
+    border: 4px solid #2196F3;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+} */
+
+.container.right::after {
+    left: -16px;
+}
+
+.container.left::before,
+.container.right::before {
+    content: " ";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 10px;
+    z-index: 1;
+    background-color: #2196F3;
+}
+
+.container.left::before {
+    left: -15px;
+}
+
+.container.right::before {
+    right: -15px;
+}
+
+.container.left:hover .content.lhowto {
+    transform: scale(1.2);
+    background-color: #e3f2fd;
+    background-image: url(./images/coding.jpeg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.container.left:hover .content.engtea {
+    transform: scale(1.2);
+    background-color: #e3f2fd;
+    background-image: url(./images/teaching.jpeg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container.left:hover .content.osrsape {
+    transform: scale(1.2);
+    background-color: #e3f2fd;
+    background-image: url(./images/osrunescape.jpeg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container.left:hover .content.randjo {
+    transform: scale(1.2);
+    background-color: #e3f2fd;
+    background-image: url(./images/randjobs.jpeg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container.right:hover .content.wowr {
+    transform: scale(1.2);
+    background-color: #e3f2fd;
+    background-image: url(./images/dragonwrath.jpeg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container.right:hover .content.milt {
+    transform: scale(1.2);
+    background-color: #e3f2fd;
+    background-image: url(./images/military.jpeg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.container.right:hover .content.ctwokore {
+    transform: scale(1.2);
+    background-color: #e3f2fd;
+    background-image: url(./images/seoulimg.jpeg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container.right:hover .content.vcuni {
+    transform: scale(1.2);
+    background-color: #e3f2fd;
+    background-image: url(./images/vcuniv.jpeg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
